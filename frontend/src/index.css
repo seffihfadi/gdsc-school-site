@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-image: url('/pod.svg'); */
+  @apply font-aldrich 
+}
+
+.glassmorphism{
+  background: rgba(17, 34, 80, 0.5);
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+}
+.backdrop {
+  @apply absolute w-full h-screen left-0 top-0 glassmorphism
+}
+
+button.gradient {
+  @apply py-2 px-4 rounded-lg text-white font-semibold capitalize bg-gblue
+}
+.container {
+  @apply mx-auto
+}
+.back {
+  background-image: url('https://i.ibb.co/DK1XVxf/img1.png'), url('https://i.ibb.co/r0MFRHb/img2.png');
+  background-repeat: repeat-y, repeat-y;
+  background-size: contain, contain;
+  background-position: top left, top right;
+  @apply max-w-lg w-full mx-5 
+}
+form .group{
+  @apply flex flex-col relative mb-8
+}
+form .group.glass input{
+  @apply border-[1px] border-[#353535]
+}
+form .group input{
+  @apply px-5 py-3 rounded-lg outline-none border-2 border-gray-500
+}
+form .group input[type='password']{
+  @apply tracking-[.2rem]
+}
+form .group.glass label{
+  @apply text-white backdrop-blur-sm
+}
+form .group label{
+  @apply text-sm capitalize absolute top-3.5 left-4 bg-white px-3 text-gray-500 transition-all rounded-full
+  cursor-text select-none
+}
+form .group input:valid ~ label,
+form .group input:disabled ~ label,
+form .group input:focus ~ label{
+  @apply -top-3.5 left-2
+}
+
+/* .sign button,
+button.gradient {
+  @apply purple_gradient_bg py-2 px-4 rounded-lg text-white font-semibold capitalize
+} */
+
+
+.details p {
+  @apply my-2
+}

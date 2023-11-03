@@ -1,0 +1,6 @@
+personName, isAccepted, workshopName, personEmail, workshopTime, workshopPlace, mentor, maker
+John Doe, true, Introduction to Python Programming, johndoe@example.com, 2023-11-10 10:00 AM, Room 101, Sarah Smith, Alice Johnson
+Jane Smith, true, Web Development Basics, janesmith@example.com, 2023-11-12 2:00 PM, Room 201, Mark Wilson, Bob Brown
+Eva Lee, false, Data Analysis with Python, evalee@example.com, 2023-11-15 3:30 PM, Room 102, Kevin Adams, Lily Davis
+Michael Johnson, true, Machine Learning Workshop, michaeljohnson@example.com, 2023-11-18 9:00 AM, Room 301, Emily Green, David Anderson
+Samantha Clark, true, Robotics and IoT, assile@gmail.com, 2023-11-20 1:00 PM, Room 202, Thomas Lee, Grace White
