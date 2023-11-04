@@ -18,7 +18,7 @@ const Welcome = () => {
     if (emailRegex.test(email)) {
       setSending(true)
       try {
-        const response = await axios.patch('http://localhost:5000/api/user/auth', {email})
+        const response = await axios.patch('https://gdsc-schools.onrender.com/api/user/auth', {email})
         setData(response.data)
       } catch (error) {
         console.log('error', error)

@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // middlewares
-app.use(cors({origin: 'http://localhost:5173'}))
+app.use(cors({origin: 'https://gdsc-school.netlify.app'}))
 app.use(express.json({limit: '1mb'}))
 
 
